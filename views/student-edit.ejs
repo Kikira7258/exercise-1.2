@@ -1,0 +1,58 @@
+
+<div>
+    <div>
+        <h1>Student Edit</h1>
+        <h3><a href="/students/list">Students List</a></h3>
+    </div>
+
+    <div>
+        <div>
+            <h3>Students Edit</h3>
+        </div>
+
+        <form method="post" action="/students/update">
+            <!-- First Name -->
+            <div>
+                <div>
+                    <label for="txtFirstName">First Name</label>
+                    <input type="text" name="txtFirstName" value="<%= data.first_nm %>">
+                </div>
+
+            </div>
+            <!-- End of first name -->
+
+            <!-- Last Name -->
+            <div>
+                <div>
+                    <label for="txtLastName">Last Name</label>
+                    <input type="text" name="txtLastName" value="<%= data.last_nm %>">
+                </div>
+
+            </div>
+            <!-- End of last name -->
+
+            <!-- Class -->
+            <div>
+                <div>
+                    <label for="txtClass">Last Name</label>
+                    <input type="text" name="txtClass" value="<%= data.class %>">
+                </div>
+
+            </div>
+            <!-- End Class -->
+
+            <!-- Class -->
+            <div>
+                <div>
+                    <label for="txtClass">Last Name</label>
+                    <input type="hidden" name="id" value="<%= data.id %>">
+                    <input type="submit" value="submit">
+                </div>
+
+            </div>
+            <!-- End Class -->
+
+            
+        </form>
+    </div>
+</div>
